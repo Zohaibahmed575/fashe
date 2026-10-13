@@ -1,0 +1,331 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.notify{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+   
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+nav{
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 20px;
+}
+
+.nav h1 span{
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+}
+.nav ul {
+    list-style-type: none;
+}
+
+.nav ul li{
+    display: inline;
+    position: relative;
+}
+
+.nav ul li a{
+    padding: 15px;
+    color: gray;
+}
+
+.nav ul i{
+    font-size: 10px;
+}
+
+.nav ul li ul{
+    position: absolute;
+    left: 0;
+    width: 210px;
+    top: 30px;
+    box-shadow: 0 0 10px rgba(16, 16, 16, 0.274);
+    display: none;
+}
+
+.nav ul li ul li{
+    display: block;
+      padding: 10px;
+    background-color: white;
+    
+}
+
+.nav ul li:hover ul{
+    display: block;
+}
+
+.icons{
+    display: flex;
+    gap: 10px;
+}
+
+.icons i{
+    
+    padding: 15px;
+    box-sizing: content-box;
+    border-radius: 100%;
+    transition: 0.3s;
+}
+
+.icons i:hover{
+    background-color: rgba(211, 211, 211, 0.614);
+}
+
+.active{
+    color: red !important;
+}
+.banner{
+    height: 600px;
+    background-color: antiquewhite;
+    background-image: url('../images/hero-1.jpg');
+    background-size: cover ; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.banner::before{
+    content: "";
+    width: 100%;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.409);
+    position: absolute;
+}
+
+.content{
+    width: 600px;
+    color: white;
+    
+    position: absolute;
+    text-align: center;
+}
+
+.content h1{
+    font-size: 70px;
+    margin-bottom: 50px;
+    
+}
+
+.content h6{
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 50px;
+}
+
+.content p{
+    margin-bottom: 50px;
+}
+
+.content a{
+    color:black;
+    background-color: white;
+    padding: 15px 35px;
+    border: 1px solid white;
+    transition: .3s;
+
+}
+
+.content a:hover{
+    color: white;
+    background-color: transparent;
+    
+}
+
+.notify2{
+    height: 50px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+
+}
+
+.notify2 ul li{
+    display: inline;
+    color: white;
+    margin-left: 50px;
+}
+
+.notify2 + .container > h1{
+    margin: 50px 0;
+ 
+   display: inline-block;
+   padding: 10px;
+}
+
+.cat{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    transition: 0.2s;
+    overflow: hidden;
+}
+.card:hover{
+    box-shadow: 0px 0px 30px rgb(75, 75, 75);
+}
+
+.card:hover img{
+    transform: scale(1.1);
+}
+
+.card img{
+    width: 350px;
+    transition: 0.3s;
+}
+
+.in{
+    width: 90%;
+    height: 50px;
+    /* background-color: rgba(255, 255, 255, 0.831); */
+    backdrop-filter: blur(8px);
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 10px;
+    
+}
+
+.landed{
+    padding: 50px 0;
+    position: relative;
+}
+.landed h6{
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: gray;
+}
+
+.landed h2{
+    font-size: 40px;
+}
+
+.landed a{
+    border: 1px solid black;
+    padding: 14px;
+   position: absolute;
+   right: 0;
+   bottom: 50px;
+   color: black;
+   font-size: 12px;
+   transition: 0.3s;
+}
+
+.landed a:hover{
+    background-color: black;
+    color: white;
+}
+.imgcard {
+    position: relative;
+}
+
+.imgcard img{
+    width: 250px;
+    position: absolute;
+    transition: 0.3s;
+}
+
+.imgcard:hover > img{
+    opacity: 1;
+}
+
+.imgcard:hover > img + img{
+    opacity: 0;
+}
+
+.pcard{
+    position: relative;
+   
+    width: 250px;
+    height: 390px;
+}
+
+.pcard span{
+    position: absolute;
+    bottom: 0;
+}
+
+.pcard p{
+    position: absolute;
+    bottom: 25px;
+}
+
+
+.imgcard{
+    height: 330px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.cat2{
+    display: flex;
+    justify-content: space-between;
+}
+.quick{
+    position: absolute;
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: -50px;
+    transition: 0.5s;
+    opacity: 0;
+    
+}
+
+.dot{
+    width: 15px;
+    height: 15px;
+    background-color: #EDE4D3;
+    position: absolute;
+    bottom: -20px;
+    border-radius: 100%;
+}
+
+.imgcard:hover .quick{
+    bottom: 30px;
+     opacity: 1;
+}
+
+.map{
+    width: 1000px;
+    height: 300px;
+    background-color: aquamarine;
+}
+
+
+
+
+
+
