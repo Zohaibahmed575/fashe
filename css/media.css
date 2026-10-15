@@ -32,3 +32,10 @@
     }
 
 }
+
+@media (max-width: 775px){
+
+    .card img{
+        width: 310px;
+    }
+}
