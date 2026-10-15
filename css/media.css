@@ -38,4 +38,8 @@
     .card img{
         width: 310px;
     }
+
+    .cat2{
+        justify-content: center;
+    }
 }
