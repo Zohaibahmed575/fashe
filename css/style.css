@@ -92,6 +92,44 @@ nav{
     background-color: rgba(211, 211, 211, 0.614);
 }
 
+.nav .icons + label{
+    display: none;
+}
+
+.nav2{
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.nav2 ul{
+    list-style: none;
+}
+.nav2 ul li a{
+    padding: 10px;
+    color: gray;
+    
+
+}
+
+.nav2 ul li{
+    margin-top: 20px;
+}
+
+#chk{
+    display: none;
+}
+
+#chk:checked + .nav2{
+    height: 500px;
+}
+
+
+
 .active{
     color: red !important;
 }
